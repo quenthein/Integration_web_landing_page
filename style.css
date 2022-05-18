@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+:root {
+  --second-title-color : rgb(198, 198, 198);
+  --main-title-color : rgb(33, 33, 33);
+  --text-button-hcolor : white;
+  --bs-blue: #0d6efd;
+  --fb-icon-color : rgb(34, 83, 197);
+  --google-icon-color : rgb(238, 111, 111);
+  --twitter-icon-color : rgb(141, 172, 244);
+  --youtube-icon-color : rgb(230, 76, 76);
+
+}
+
+
+h1, h2, h3, h4, h5, h6, .citation_paragraphe {
+  font-family: 'Merriweather', sans-serif;
+}
+
+/* header underline solution */
+
+a.active {
+  color: var(--bs-blue)!important;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  color: var(--bs-blue);
+}
+
+.navbar .navbar-nav .nav-link {
+  color: var(--main-title-color);
+  font-size: 1em;
+}
+@media only screen and (min-width: 992px) {
+  .navbar {
+    padding: 0;
+  }
+  .navbar .navbar-brand {
+    padding: 0 0.7em;
+  }
+  .navbar .navbar-nav .nav-link {
+    padding: 1em 0;
+  }
+  .navbar .navbar-nav .nav-item {
+    margin: 0 1em;
+  }
+}
+.navbar .navbar-nav .nav-item {
+  position: relative;
+}
+.navbar .navbar-nav .nav-item::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: var(--bs-blue);
+  width: 0%;
+  content: "";
+  height: 2px;
+}
+.navbar .navbar-nav .nav-item:hover::after {
+  width: 100%;
+}
+.navbar .navbar-nav .nav-item::after {
+  transition: all 0.5s;
+}
+
+/* header style */
+
+
+#header_trial_button {
+  margin-right: 10px;
+  font-size: 0.8em;
+  padding: 10px;
+}
+
+/* main */
+
+h1 {
+  color: var(--second-title-color);
+  font-size: 1.6em;
+}
+
+h1 > span {
+  font-size: 2.3em;
+  color: var(--main-title-color);
+}
+
+#trial_button {
+  font-size: 0.8em;
+  padding: 15px 40px 15px 40px;
+  box-shadow: 10px 5px 20px rgba(201, 201, 201, 0.587);
+}
+
+/* second section */
+
+#product-title {
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+#product-section {
+  max-width: 960px;
+}
+
+.products_logo {
+  width: 92%;
+  transform: translate(5px, -30px);
+  border-radius: 15px;
+}
+
+.card {
+  height: 100%;
+}
+
+.card-title {
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+.card_text {
+  font-size: 0.9em;
+  padding: 0px 20px 0px 20px;
+  color: rgb(165, 165, 165)
+}
+
+hr.separation_line {
+  border-top: 4px solid #ffce00;
+  margin-bottom: 80px;
+  width: 10%;
+  opacity: 99;
+  border-radius: 20px;
+}
+
+/* third section */
+
+.list_section {
+  width: 100%;
+  padding-top: 70px;
+  background-color: orange;
+  margin-bottom: 150px;
+}
+
+.list-group {
+  border-radius: 10px;
+  max-width: 400px;
+  margin-top: 30px;
+  transform: translateY(37px);
+  border: none;
+}
+
+h3 {
+  font-size: 1.1em;
+}
+
+.list-paragraph {
+  font-size: 0.8em;
+}
+
+.list-group-item {
+  padding: 40px 50px;
+}
+
+.form_image {
+  transform: translate(104px, 40px);
+}
+
+.pencil_illustration {
+  transform: translateY(37px);
+}
+
+/* fourth section */
+
+
+.patchwork_pictures {
+  padding: 0;
+}
+
+.patchwork_pictures > img {
+  border-radius: 10px;
+  box-shadow: 10px 5px 20px rgba(201, 201, 201, 0.587);
+}
+
+.patchwork_section {
+  padding-bottom: 250px;
+}
+
+.patchwork_card {
+  border: none;
+  margin-top: 300px;
+  height: 300px;
+}
+
+.patchwork_picture_1 {
+  transform: translate(81px, 351px);
+}
+
+.patchwork_picture_2 {
+  transform: translate(45px, 10px);
+}
+
+.patchwork_picture_3 {
+  transform: translate(-58px, 525px);
+}
+
+.patchwork_picture_4 {
+  transform: translate(10px, 141px);
+}
+
+.patchwork_picture_5 {
+  transform: translate(-140px, 470px);
+}
+
+/* fifth section */
+
+
+
+#card_patchwork_title {
+  font-size: 2em;
+}
+
+.icon_logo_section {
+  width: 51%;
+  padding: 45px;
+  border-radius: 20px;
+  
+  box-shadow: 10px 5px 20px rgba(201, 201, 201, 0.587);
+}
+
+
+#logo-section-card-title {
+  font-size: 2em;
+}
+
+.bi-windows {
+  color: var(--bs-blue);
+}
+
+.bi-apple {
+  color: grey;
+}
+
+.bi-file-pdf-fill {
+  color: var(--google-icon-color);
+}
+
+.bi-filetype-psd {
+  color: var(--fb-icon-color);
+}
+
+.logo-section-card {
+  position: relative;
+  border: 1px solid rgb(225, 225, 225);
+  box-shadow: 10px 5px 20px rgba(201, 201, 201, 0.587);
+  background-image: url(./ressources/pencil_illustration.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 600px;
+}
+
+/* sixth section */
+
+
+.flower_image {
+  width: 400px;
+  border-radius: 10px;
+}
+
+.flower_rounded {
+  width: 200px;
+}
+
+.icon_flower_section > svg {
+  color: var(--main-title-color);
+}
+
+.citation_paragraphe {
+  font-size: 1.9em;
+  color: var(--main-title-color);
+}
+
+.citation_section {
+  margin-top: 200px;
+}
+
+#flower-top {
+  transform: translate(-45px, -120px);
+}
+
+#flower-bottom {
+  transform: translate(-45px, 404px);
+}
+
+/* footer section */
+
+
+.footer_question {
+  text-align: center;
+  color: var(--main-title-color);
+  font-size: 2.3em;
+  padding-top: 100px;
+  padding-bottom: 40px;
+}
+
+.form-control {
+  width: 45%;
+  height: 70px;
+  border-radius: 0px;
+  border: none;
+}
+
+.footer_button {
+  padding-left: 40px;
+  padding-right: 40px;
+  background: #7474BF;
+  background: -webkit-linear-gradient(to right, #348AC7, #7474BF);
+  background: linear-gradient(to right, #348AC7, #7474BF);
+  color: #fff;
+  border-radius: 0px;
+}
+
+.btn-social {
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 10px 5px 20px rgba(201, 201, 201, 0.587);
+}
+
+.btn-facebook > svg {
+  color: var(--fb-icon-color);
+}
+
+.btn-google > svg {
+  color: var(--google-icon-color);
+}
+
+.btn-twitter > svg {
+  color: var(--twitter-icon-color);
+}
+
+.btn-youtube > svg {
+  color: var(--youtube-icon-color);
+}
+
+
+/* animation js */
+
+.animate {
+  -webkit-transform: translateY(80px) rotate(-5deg) translateZ(0);
+  transform: translateY(50px) rotate(-5deg) translateZ(0);
+  -webkit-transition-delay: .3s;
+  -o-transition-delay: .3s;
+  transition-delay: .3s;
+  -webkit-transition: .4s;
+  -o-transition: .4s;
+  transition: .4s;
+}
+.bottom-right.inView {
+  opacity: 1;
+  -webkit-transform: translateY(0px) rotate(0deg) translateZ(0);
+  transform: translateY(0px) rotate(0deg) translateZ(0);
+}
+.inView {
+  opacity: 1;
+  -webkit-transform: translateY(0px) rotate(0deg) translateZ(0);
+  transform: translateY(0px) rotate(0deg) translateZ(0);
+}
